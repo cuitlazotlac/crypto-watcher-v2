@@ -32,10 +32,10 @@ const App = () => (
           </Switch>
         </div>
       </Layout>
-      <div className="footer">
+      {/* <div className="footer">
         <Typography.Title level={5} style={{ color: 'white', textAlign: 'center' }}>Copyright © 2021
           <Link to="/">
-            Cryptoverse Inc.
+            Cryptowatcher.
           </Link> <br />
           All Rights Reserved.
         </Typography.Title>
@@ -44,7 +44,7 @@ const App = () => (
           <Link to="/exchanges">Exchanges</Link>
           <Link to="/news">News</Link>
         </Space>
-      </div>
+      </div> */}
     </div>
   </div>
 );
