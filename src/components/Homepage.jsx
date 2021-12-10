@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import millify from "millify";
 import { Typography, Row, Col, Statistic } from "antd";
 import { Link } from "react-router-dom";
@@ -7,6 +7,8 @@ import { useGetCryptosQuery } from "../services/cryptoApi";
 import Cryptocurrencies from "./Cryptos";
 import News from "./News";
 import Loader from "./Loader";
+
+import Typical from "react-typical";
 
 const { Title } = Typography;
 
@@ -19,7 +21,11 @@ const Homepage = () => {
   return (
     <>
       <Title level={2} className="heading">
-        Global Crypto Stats
+        <Typical
+          steps={["Global Crypto Stats", 1000]}
+          loop={Infinity}
+          wrapper="p"
+        />
       </Title>
       <Row gutter={[32, 32]}>
         <Col span={12}>
@@ -55,7 +61,11 @@ const Homepage = () => {
       </Row>
       <div className="home-heading-container">
         <Title level={2} className="home-title">
-          Top 10 Cryptos In The World
+          <Typical
+            steps={["Top 10 Cryptos In The World", 1000]}
+            loop={Infinity}
+            wrapper="p"
+          />
         </Title>
         <Title level={3} className="show-more">
           <Link to="/cryptocurrencies">Show more</Link>
@@ -64,7 +74,11 @@ const Homepage = () => {
       <Cryptocurrencies simplified />
       <div className="home-heading-container">
         <Title level={2} className="home-title">
-          Latest Crypto News
+          <Typical
+            steps={["Latest Crypto News", 1000]}
+            loop={Infinity}
+            wrapper="p"
+          />
         </Title>
         <Title level={3}>
           <Link to="/news">Show more</Link>
