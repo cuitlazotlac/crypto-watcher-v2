@@ -49,7 +49,7 @@ const Navbar = () => {
         </Button>
       </div>
       {activeMenu && (
-        <Menu theme="dark">
+        <Menu theme="light">
           <Menu.Item icon={<HomeOutlined />}>
             <Link to="/">Home</Link>
           </Menu.Item>
