@@ -8,7 +8,7 @@ import {
   FundOutlined,
   MenuOutlined,
 } from "@ant-design/icons";
-import logo from "../../resources/img/logo.png";
+import logo from "../../resources/img/logo_linear.png";
 
 // import icon from '../images/cryptocurrency.png';
 
@@ -41,7 +41,7 @@ const Navbar = () => {
         <Image src={logo} width={50} />
         <Typography.Title level={3} className="logo">
           <Title level={4} className="app-name">
-            Crypto Watcher
+            CryptoWatcher
           </Title>
         </Typography.Title>
         <Button
@@ -52,7 +52,7 @@ const Navbar = () => {
         </Button>
       </div>
       {activeMenu && (
-        <Menu theme="light">
+        <Menu theme="light" bordered={false}>
           <Menu.Item icon={<HomeOutlined />}>
             <Link to="/">Home</Link>
           </Menu.Item>
