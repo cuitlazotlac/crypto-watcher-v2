@@ -2,7 +2,7 @@
   --text-primary: #000;
   --bgPrimary: #fff;
   --bgSecondary: #f9f9f9;
-  --pink: #bd5500;
+  --pink: #12617f;
   --light-blue: #e6f7ff;
   --border: #d9d9d9;
   --navbar-color: #ffffff;
@@ -12,6 +12,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Readex Pro", sans-serif;
 }
 
 a:hover {
@@ -48,7 +49,6 @@ a:hover {
 }
 
 .logo-container {
-  /* background-color: #001529; */
   background-color: var(--navbar-color);
 
   display: flex;
@@ -135,6 +135,7 @@ a:hover {
   }
   .show-more {
     font-size: 1.3rem !important;
+    color: var(--pink);
   }
 }
 
@@ -329,7 +330,7 @@ a:hover {
   color: #0071bd;
 }
 .chart-title {
-  color: #0071bd !important;
+  color: var(--pink) !important;
 }
 .price-container {
   display: flex !important;
@@ -381,4 +382,20 @@ a:hover {
   flex-direction: column;
   padding: 20px;
   align-items: center;
+}
+
+[data-theme="compact"]
+  .site-collapse-custom-collapse
+  .site-collapse-custom-panel,
+.site-collapse-custom-collapse .site-collapse-custom-panel {
+  margin-bottom: 4px;
+  overflow: hidden;
+  background: #fff;
+  border: 0px;
+  border-radius: 2px;
+}
+
+.app-name {
+  margin-top: 20px;
+  color: var(--pink) !important;
 }

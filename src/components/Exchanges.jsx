@@ -1,10 +1,10 @@
-import React from 'react';
-import millify from 'millify';
-import { Collapse, Row, Col, Typography, Avatar } from 'antd';
-import HTMLReactParser from 'html-react-parser';
+import React from "react";
+import millify from "millify";
+import { Collapse, Row, Col, Typography, Avatar } from "antd";
+import HTMLReactParser from "html-react-parser";
 
-import { useGetExchangesQuery } from '../services/cryptoApi';
-import Loader from './Loader';
+import { useGetExchangesQuery } from "../services/cryptoApi";
+import Loader from "./Loader";
 
 const { Text } = Typography;
 const { Panel } = Collapse;
@@ -26,24 +26,32 @@ const Exchanges = () => {
       <Row>
         {exchangesList.map((exchange) => (
           <Col span={24}>
-            <Collapse>
+            <Collapse className="site-collapse-custom-collapse">
               <Panel
+                className="site-collapse-custom-panel"
                 key={exchange.id}
                 showArrow={false}
-                header={(
+                header={
                   <Row key={exchange.id}>
                     <Col span={6}>
-                      <Text><strong>{exchange.rank}.</strong></Text>
-                      <Avatar className="exchange-image" src={exchange.iconUrl} />
-                      <Text><strong>{exchange.name}</strong></Text>
+                      <Text>
+                        <strong>{exchange.rank}.</strong>
+                      </Text>
+                      <Avatar
+                        className="exchange-image"
+                        src={exchange.iconUrl}
+                      />
+                      <Text>
+                        <strong>{exchange.name}</strong>
+                      </Text>
                     </Col>
                     <Col span={6}>${millify(exchange.volume)}</Col>
                     <Col span={6}>{millify(exchange.numberOfMarkets)}</Col>
                     <Col span={6}>{millify(exchange.marketShare)}%</Col>
                   </Row>
-                  )}
+                }
               >
-                {HTMLReactParser(exchange.description || '')}
+                {HTMLReactParser(exchange.description || "")}
               </Panel>
             </Collapse>
           </Col>
