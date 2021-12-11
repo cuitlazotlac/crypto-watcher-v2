@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Button, Menu, Typography, Avatar, Image } from "antd";
+import { Button, Menu, Typography, Avatar, Image, Title } from "antd";
 import { Link } from "react-router-dom";
 import {
   HomeOutlined,
@@ -15,6 +15,7 @@ import logo from "../../resources/img/logo.png";
 const Navbar = () => {
   const [activeMenu, setActiveMenu] = useState(true);
   const [screenSize, setScreenSize] = useState(undefined);
+  const { Title } = Typography;
 
   useEffect(() => {
     const handleResize = () => setScreenSize(window.innerWidth);
@@ -39,7 +40,9 @@ const Navbar = () => {
       <div className="logo-container">
         <Image src={logo} width={50} />
         <Typography.Title level={3} className="logo">
-          <Link to="/">Crypto Watcher</Link>
+          <Title level={4} className="app-name">
+            Crypto Watcher
+          </Title>
         </Typography.Title>
         <Button
           className="menu-control-container"
