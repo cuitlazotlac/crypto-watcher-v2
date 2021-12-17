@@ -8,15 +8,6 @@ import Cryptocurrencies from "./Cryptos";
 import News from "./News";
 import Loader from "./Loader";
 
-import { Toggle } from "./shared/Toggle";
-import {
-  GlobalStyles,
-  ligthTheme,
-  darkTheme,
-} from "../resources/styles/globalStyles";
-import styled, { ThemeProvider } from "styled-components";
-import { useDarkMode } from "../resources/styles/useDarkMode";
-
 import Typical from "react-typical";
 
 const { Title } = Typography;
@@ -29,7 +20,6 @@ const Homepage = () => {
 
   return (
     <>
-      <Toggle className="toggle" theme={theme} toggleTheme={toggleTheme} />
       <Title level={2} className="heading">
         <Typical
           steps={["Global Crypto Stats", 500]}
