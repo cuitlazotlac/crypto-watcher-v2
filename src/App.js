@@ -32,7 +32,7 @@ function App() {
       <div className="navbar">
         <Navbar />
         <GlobalStyles />
-        <Toggle className="toggle" theme={theme} toggleTheme={toggleTheme} />
+        {/* <Toggle className="toggle" theme={theme} toggleTheme={toggleTheme} /> */}
       </div>
       <div className="main">
         <Layout>
