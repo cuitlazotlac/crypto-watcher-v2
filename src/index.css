@@ -1,6 +1,7 @@
 body {
   margin: 0;
-  font-family: "Readex Pro", sans-serif;
+  /* font-family: "Readex Pro", sans-serif; */
+  font-family: "Playfair Display", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -8,5 +9,6 @@ body {
 code {
   /* font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace; */
-  font-family: "Readex Pro", sans-serif;
+  /* font-family: "Readex Pro", sans-serif; */
+  /* font-family: "Playfair Display", serif; */
 }

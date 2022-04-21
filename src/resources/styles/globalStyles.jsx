@@ -1,14 +1,15 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
-    @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+    /* @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap'); */
 
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Rajdhani', sans-serif;
+  /* font-family: 'Rajdhani', sans-serif; */
+  font-family: 'Playfair Display', serif;
   background-color: ${({ theme }) => theme.body};
   color: ${({ theme }) => theme.text};
   transition: all .5s linear;
@@ -30,6 +31,11 @@ export const GlobalStyles = createGlobalStyle`
   color: #fff;
 }
 
+.ant-typography show-more {
+      font-size: 1.3rem !important;
+      color: red;
+    }
+    
 label {
   position: relative;
 }
@@ -115,7 +121,7 @@ header[role="banner"] {
     --text-primary: #000;
     --bgPrimary: #fff;
     --bgSecondary: #f9f9f9;
-    --pink: #12617f;
+    --pink: #000;
     --light-blue: #e6f7ff;
     --border: #d9d9d9;
     --navbar-color: #ffffff;
@@ -125,7 +131,8 @@ header[role="banner"] {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Readex Pro", sans-serif;
+    /* font-family: "Readex Pro", sans-serif; */
+    font-family: 'Playfair Display', serif;
   }
   
   a:hover {

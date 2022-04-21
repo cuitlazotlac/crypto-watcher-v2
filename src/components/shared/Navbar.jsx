@@ -8,7 +8,7 @@ import {
   FundOutlined,
   MenuOutlined,
 } from "@ant-design/icons";
-import logo from "../../resources/img/logo_linear.png";
+import logo from "../../resources/img/glasses.png";
 
 // import icon from '../images/cryptocurrency.png';
 
