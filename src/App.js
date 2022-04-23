@@ -24,7 +24,7 @@ import { useDarkMode } from "./resources/styles/useDarkMode";
 
 function App() {
   const [theme, toggleTheme] = useDarkMode();
-  const themeMode = theme === "light" ? ligthTheme : darkTheme;
+  const themeMode = theme === "light" ? ligthTheme : ligthTheme;
 
   return (
     <ThemeProvider theme={themeMode}>
